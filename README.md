@@ -36,14 +36,14 @@ docker run -p 5000:5000 --link graphite:graphite uplift-model
 
 ## Инструкции для тестирования сервисов
 
-1) пример тестирования с использованием командной строки
+1) Пример тестирования с использованием командной строки
 ```
 curl -X POST -H "Content-Type: application/json" \
   -d '{"features": [10, 95.49,  0,  1,  1,  1,  0,  0,  0, 0,  1]}' \
   http://localhost:5000/predict
 ```
 
-2) пример тестирования с использованием `app/request.py`
+2) Пример тестирования с использованием `app/request.py`
 ```
 cd app
 python request.py
